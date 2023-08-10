@@ -58,20 +58,19 @@
     width: 100%;
     min-height: 50px;
 
-    background: #FF4820;
+    background: #ffffff;
     font-family: var(--font-family);
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #daaeff;
     cursor: pointer;
     outline: none;
     padding: 0 1rem;
     border: none;
 
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
 }
 
 .gpt3__header-content__people {
