@@ -7,8 +7,8 @@ const Header = () => {
   return (
     <div className="gpt3__header section__padding" id="home">
       <div className="gpt3__header-content">
-        <h1 className="gradient__text">Let’s Build Something amazing with GPT-3 OpenAI</h1>
-        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+        <h1 className="gradient__text">Dynamic and User-Focused Web Solutions</h1>
+        <p>As a client-centric consultancy, KeenTechnic goes beyond creating visually stunning websites. Their team understands the crucial role of user experience and user interface in driving success on the digital landscape. By combining artistic flair with cutting-edge technology, KeenTechnic crafts websites that are not only visually striking but also seamlessly responsive across all devices.</p>
 
         <div className="gpt3__header-content__input">
           <input type="email" placeholder="Your Email Address" />
