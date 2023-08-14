@@ -4,30 +4,25 @@ import './features.css';
 
 const featureData = [
   {
-    title: 'Improving end distrusts instantly',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.'
+    title: 'Web Design',
+    text: 'KeenTechnics Tailored Web Design Expertise Discover the power of a well-executed web design project with KeenTechnics. Our phased approach guarantees a comprehensive consideration of all vital aspects, delivering a high-performance website. Our highly skilled team, each a specialist in their field, ensures a seamless and captivating online experience for your audience'
   },
   {
-    title: 'Become the tended active',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.'
+    title: 'SEO Optimization',
+    text: 'Keentechnics All-Inclusive Digital Marketing Keentechnic goes beyond the norm, providing a rare in-house advantage in digital marketing and SEO services. By combining website optimizations with SEO strategies, we create a seamless and productive collaboration. Embrace efficiency and unlock your websites full potential with Keentechnic as your dedicated digital partner. '
   },
   {
-    title: 'Message or am nothing',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.'
+    title: 'Website Hosting',
+    text: 'Keentechnic offers a powerful and reliable website hosting solution that combines cutting-edge technology, top-tier security, and unparalleled support. With our hosting services, your web design business can thrive in the digital landscape, delivering a seamless and engaging user experience to your audience while enjoying the peace of mind that comes with a dependable hosting partner. Experience the Keentechnic advantage and take your web design business to new heights with our exceptional website hosting services. '
   },
-  {
-    title: 'Really boy law county',
-    text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.'
-  },
-
 ]
 
 const Features = () => {
   return (
     <div className="gpt3__features section__padding" id="features">
       <div className="gpt3__features-heading">
-        <h1 className="gradient__text">The Future is Now and You Just Need To Realize It. Step into Future Today & Make it Happen.</h1>
-        <p>Request Early Access to Get Started</p>
+        <h1 className="gradient__text">Our design and development processes prioritize intuitive navigation, clear content presentation, and swift load times.</h1>
+        <p>Start A Project Now!</p>
       </div>
       <div className="gpt__features-containers">
         {featureData.map((item, index) => (
