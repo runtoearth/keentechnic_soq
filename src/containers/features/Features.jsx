@@ -1,6 +1,7 @@
 import React from 'react';
 import { Feature } from '../../components';
 import './features.css';
+import finart from '../../assets/finart.png';
 
 const featureData = [
   {
@@ -23,6 +24,9 @@ const Features = () => {
       <div className="gpt3__features-heading">
         <h1 className="gradient__text">Our design and development processes prioritize intuitive navigation, clear content presentation, and swift load times.</h1>
         <p>Start A Project Now!</p>
+        <div className="gpt3__features-image">
+        <img src={finart} alt="Our services Image" />
+        </div>
       </div>
       <div className="gpt__features-containers">
         {featureData.map((item, index) => (

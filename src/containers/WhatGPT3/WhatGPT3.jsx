@@ -1,6 +1,7 @@
 import React from 'react';
 import { Feature } from '../../components';
 import './whatgpt3.css';
+import finart from '../../assets/finart.png';
 
 const WhatGPT3 = () => {
   return (
