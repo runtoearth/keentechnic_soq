@@ -1,0 +1,143 @@
+.keentechnic__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.keentechnic__form-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+
+.keentechnic__form-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.keentechnic__form-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.keentechnic__form-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.keentechnic__form-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF
+}
+
+.keentechnic__form-content h4:last-child{
+    color: #ff8a71;
+}
+
+.keentechnic__form-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+
+    margin: 1rem 0;
+}
+
+.keentechnic__form-content p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    /* line-height: 30px; */
+    color: var(--color-text);
+    /* margin-bottom: 2rem; */
+}
+
+.keentechnic__form-form p {
+    font-family: var(--font-family);
+    font-size: x-small;
+    /* line-height: 30px; */
+    color: var(--color-text);
+    /* margin-bottom: 2rem; */
+}
+
+.keentechnic__form-form label {
+    font-family: var(--font-family);
+    font-size: 16px;
+    /* line-height: 30px; */
+    color: var(--color-text);
+    /* margin-bottom: 2rem; */
+    /* width: 30%; */
+}
+
+.form {
+    width: 80%;
+    display: inline-grid;
+}
+
+.f-error {
+    font-size: x-small;
+}
+
+input, select {
+    margin-bottom: 1em;
+}
+
+button {
+    flex: 0.6;
+    width: 50%;
+    min-height: 50px;
+    background: #e24303;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+
+}
+
+.input {
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+
+select {
+    padding: 0.25em;
+}
+
+
+
+@media screen and (max-width: 950px) {
+    .keentechnic__form {
+        flex-direction: column;
+    }
+
+    .keentechnic__form-image {
+        margin: 1rem 0;
+    }
+
+    .keentechnic__form-content {
+        margin-top: 2rem;
+    }
+
+    .keentechnic__form-form {
+        margin-top: 2rem;
+    }
+}
