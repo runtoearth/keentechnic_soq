@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: -8rem;
 }
 
 .keentechnic__form-image {
@@ -24,6 +25,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    margin-bottom: 10rem;
 }
 
 .keentechnic__form-form {
@@ -76,7 +78,7 @@
     font-size: 16px;
     /* line-height: 30px; */
     color: var(--color-text);
-    /* margin-bottom: 2rem; */
+    margin-bottom: .5rem;
     /* width: 30%; */
 }
 
@@ -90,7 +92,9 @@
 }
 
 input, select {
-    margin-bottom: 1em;
+    margin-bottom: 2rem;
+    border: none;
+    padding: .5rem;
 }
 
 button {
@@ -139,5 +143,12 @@ select {
 
     .keentechnic__form-form {
         margin-top: 2rem;
+        align-items: center;
+    }
+
+    input, select {
+        margin-bottom: 2rem;
+        border: none;
+        padding-left: 8rem;
     }
 }
