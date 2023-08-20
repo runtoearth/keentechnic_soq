@@ -17,7 +17,7 @@ function Form () {
       <div className="keentechnic__form-content">
         <h4>Request a Consultation to Get Started</h4>
         <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
+        <p>Don't wait any longer to elevate your online presence. Fill out our inquiry form now, and let's start building a website that not only meets but exceeds your expectations. Your digital success is just a few clicks away!</p>
       </div>
       <div class="keentechnic__form-form">
         <form class="form" onSubmit={handleSubmit(onSubmit)}>
