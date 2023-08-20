@@ -21,7 +21,7 @@ function Form () {
       </div>
       <div class="keentechnic__form-form">
         <form class="form" onSubmit={handleSubmit(onSubmit)}>
-          <label><h4>Client Name:</h4></label>
+          <label><h4>Full Name:</h4></label>
           <input class="input" type="text" {...register("clientName", {required: true })} />
           {errors.clientName && <p>Client Name is required.</p>}
           <label><h4>Organization Name:</h4></label>
