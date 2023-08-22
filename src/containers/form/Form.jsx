@@ -21,24 +21,26 @@ function Form () {
       </div>
       <div class="keentechnic__form-form">
         <form class="form" onSubmit={handleSubmit(onSubmit)}>
-          <label><h4>Full Name:</h4></label>
-          <input class="input" type="text" {...register("clientName", {required: true })} />
-          {errors.clientName && <p>Client Name is required.</p>}
-          <label><h4>Organization Name:</h4></label>
-          <input class="input" type="text" {...register("orgName", {required: true })} />
-          {errors.orgName && <p>Organization Name is required.</p>}
-          <label><h4>Email:</h4></label>
-          <input class="input" type="email" {...register("email", {required: true, pattern: /^\S+@\S+$/i })} />
-          {errors.email && <p>Email is required.</p>}
-          <label>
-            <h4>Project Type:</h4>
-            <select class="input" {...register("project")}>
-              <option value="ecommerce">E-Commerce</option>
-              <option value="portfolio">Portfolio</option>
-              <option value="landing">Landing/Service Page</option>
-              <option value="other">Other</option>
-            </select>
-          </label>
+          <div className="form-group">
+            <label for="clientName"><h4>Full Name:</h4></label>
+            <input class="input" name="clientName" id="clientName" type="text" placeholder="Client/Contact Name" {...register("clientName", {required: true })} />
+            {errors.clientName && <p>Client Name is required.</p>}
+          </div>
+          <div className="form-group">
+            <label for="orgName"><h4>Organization Name:</h4></label>
+            <input class="input" name="orgName" id="orgName" type="text" placeholder="Organization Name" {...register("orgName", {required: true })} />
+            {errors.orgName && <p>Organization Name is required.</p>}
+          </div>
+          <div className="form-group">
+            <label for="email"><h4>Email:</h4></label>
+            <input class="input" name="email" id="email" type="email" placeholder="Contact Email" {...register("email", {required: true, pattern: /^\S+@\S+$/i })} />
+            {errors.email && <p>Email is required.</p>}
+          </div>
+          <div className="form-group">
+            <label for="projectType"><h4>Project Type:</h4></label>
+            <input class="input" name="projectType" id="projectType" type="text" placeholder="E-commerce, landing page, etc." {...register("projectType", {required: true })} />
+            {errors.projectType && <p>Project type is required.</p>}
+          </div>
           <button type="submit">Submit</button>
         </form>
       </div>
