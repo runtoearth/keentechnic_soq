@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Footer, Features, WhatGPT3, Header, Form } from './containers';
-import { Brand, Navbar } from './components';
+import { Navbar } from './components';
 import './App.css';
 
 const App = () => {
