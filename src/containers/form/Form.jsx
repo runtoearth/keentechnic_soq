@@ -3,10 +3,10 @@ import './form.css';
 import axios from 'axios';
 
 function Form () { 
-  const [clientName, setClientName] = useState();
-  const [orgName, setOrgName] = useState();
-  const [email, setEmail] = useState();
-  const [projectType, setProjectType] = useState();
+  const [clientName, setClientName] = useState('');
+  const [orgName, setOrgName] = useState('');
+  const [email, setEmail] = useState('');
+  const [projectType, setProjectType] = useState('');
   const handleSaveClient = () => {
     const data = {
       clientName,
@@ -14,6 +14,7 @@ function Form () {
       email,
       projectType
     };
+
     axios
       .post('http://localhost:5000/client', data)
       .then(result => console.log(result))
