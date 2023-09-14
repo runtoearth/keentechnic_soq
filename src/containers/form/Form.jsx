@@ -1,29 +1,25 @@
 import React, { useState } from 'react';
 import './form.css';
 import axios from 'axios';
-import { baseURL } from "./utils/constant";
+// import { baseURL } from "./utils/constant";
 
-function Form () {
-  
-  const [clientName, setClientName] = useState("");
-  const [orgName, setOrgName] = useState("");
-  const [email, setEmail] = useState("");
-  const [projectType, setProjectType] = useState("");
-  
-  const newClient = () => {
-    axios.post(`${baseURL}/save`, {clientName: clientName, orgName: orgName, email: email, projectType: projectType}).then((res) => {
-      console.log(res.data);
-      setClientName("");
-      setOrgName("");
-      setEmail("");
-      setProjectType("");
-    });
-    console.log(clientName);
-    console.log(orgName);
-    console.log(email);
-    console.log(projectType);
-  };
-
+function Form () { 
+  const [clientName, setClientName] = useState();
+  const [orgName, setOrgName] = useState();
+  const [email, setEmail] = useState();
+  const [projectType, setProjectType] = useState();
+  const handleSaveClient = () => {
+    const data = {
+      clientName,
+      orgName,
+      email,
+      projectType
+    };
+    axios
+      .post('http://localhost:5000/client', data)
+      .then(result => console.log(result))
+      .catch(err => console.log(err));
+  }
 
   return (
     <div className="keentechnic__form section__padding" id="form">
@@ -50,7 +46,7 @@ function Form () {
             <label htmlFor="projectType"><h4>Project Type:</h4></label>
             <input className="input ProjectType" type="text" value={projectType} placeholder="E-commerce, landing page, etc." onChange={(e) => setProjectType(e.target.value)} />
           </div>
-          <button type="submit" onClick={newClient}>Submit</button>
+          <button type="submit" onClick={handleSaveClient}>Submit</button>
         </form>
       </div>
     </div>

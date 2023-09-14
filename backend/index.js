@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 require("dotenv").config();
 
 const routes = require("./routes/ClientRoute");
+const ClientModel = require("./models/ClientModel");
 
 const cors = require('cors');
 
@@ -16,6 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.json());
 app.use(cors());
+
+app.use('/client', routes);
+
+app.get('/', (req, res) => {
+    console.log(req);
+});
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
