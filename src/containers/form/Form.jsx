@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './form.css';
 import axios from 'axios';
-// import { baseURL } from "./utils/constant";
 
 function Form () { 
   const [clientName, setClientName] = useState();
